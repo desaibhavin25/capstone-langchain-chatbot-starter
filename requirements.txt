@@ -1,7 +1,7 @@
 cohere
 chromadb
 Flask==2.3.2
-langchain
-langchainplus-sdk
+langchain==0.0.195
+langchainplus-sdk==0.0.8
 gunicorn
 pytest
