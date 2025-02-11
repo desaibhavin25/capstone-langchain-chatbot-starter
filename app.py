@@ -36,7 +36,6 @@ def load_db():
 qa = load_db()
 
 def answer_from_knowledgebase(message):
-    print(qa)
     res = qa({"query": message})
     return res['result']
 
