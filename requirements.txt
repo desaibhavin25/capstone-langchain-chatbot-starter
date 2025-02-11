@@ -1,4 +1,4 @@
-cohere
+cohere==4.32
 chromadb
 Flask==2.3.2
 langchain==0.0.195
