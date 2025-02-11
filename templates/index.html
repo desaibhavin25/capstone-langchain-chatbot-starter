@@ -6,26 +6,39 @@
     <link rel="stylesheet" type="text/css" href="static/style.css">
 </head>
 <body>
+    <h1>KnowAllBot</h1>
     <div class="container mt-5">
-        <div id="chat-container" class="chat-container"></div>
-        <div class="row">
-            <div class="col">
-                <div>
+            
+            <div class="row">
+                <div class="input-group-append">
+                    <p>Source:</p>
                     <select class="form-control" id="function-select">
                         <option value="answer">Answer as Chatbot</option>
+                        <option value="kbanswer">Answer from knowledge base</option>
+                        <option value="search">Search from knowledge base</option>
+
                     </select>
                 </div>
+
             </div>
-            <div class="col">
+            <br/>
+            <div class="row">
                 <div class="input-group-append">
+                    <p>Question:</p>
                     <input type="text" id="message-input" placeholder="Type your message here...">
                     <button id="send-btn" class="btn btn-primary">Send</button>
                 </div>
             </div>
         </div>
+        <div id="chat-container" class="chat-container"></div>
+        <div style="text-align:center;">
+            <button id="clear-btn" class="btn">Clear All Text</button>
+        </div>
+       
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="static/main.js"></script>
 </body>
+
 </html>

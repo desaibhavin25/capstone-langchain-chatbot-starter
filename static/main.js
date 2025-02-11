@@ -1,3 +1,7 @@
+function clearText(){
+    let chatContainer = document.getElementById('chat-container');
+    chatContainer.innerHTML = '';
+}
 function sendMessage() {
     let messageInput = document.getElementById('message-input');
     let message = messageInput.value;
@@ -80,3 +84,6 @@ function displayMessage(sender, message) {
 // Handle button click event
 let sendButton = document.getElementById('send-btn');
 sendButton.addEventListener('click', sendMessage);
+
+let clearButton = document.getElementById('clear-btn');
+clearButton.addEventListener('click', clearText);
